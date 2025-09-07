@@ -7,3 +7,9 @@ for (let i = 0; i < gridSquare; i++) {
     container.appendChild(div);
   }
 }
+
+container.addEventListener('mouseover', (event) => {
+  if (event.target.tagName === 'DIV') {
+    event.target.style.backgroundColor = '#F85B1A';
+  }
+});
